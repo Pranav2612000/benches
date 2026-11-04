@@ -1,0 +1,23 @@
+{
+ "__corpus": 1380076633193936.0,
+ "bench/vector/filtered-recall||clustered, 1 \u00d7 1024 rows|p50": 419398204.0,
+ "bench/vector/filtered-recall||clustered, 1 \u00d7 1024 rows|recall@10": 0.901000440120697,
+ "bench/vector/filtered-recall||clustered, 10 \u00d7 1024 rows|p50": 407223814.0,
+ "bench/vector/filtered-recall||clustered, 10 \u00d7 1024 rows|recall@10": 0.9740002155303955,
+ "bench/vector/filtered-recall||clustered, 100 \u00d7 1024 rows|p50": 491488051.0,
+ "bench/vector/filtered-recall||clustered, 100 \u00d7 1024 rows|recall@10": 0.9750002026557922,
+ "bench/vector/filtered-recall||scattered, 1 of 100003|p50": 616690065.0,
+ "bench/vector/filtered-recall||scattered, 1 of 100003|recall@10": 0.5560001134872437,
+ "bench/vector/filtered-recall||scattered, 1 of 1009|p50": 761853409.0,
+ "bench/vector/filtered-recall||scattered, 1 of 1009|recall@10": 0.9640001654624939,
+ "bench/vector/filtered-recall||scattered, 1 of 11|p50": 989929065.0,
+ "bench/vector/filtered-recall||scattered, 1 of 11|recall@10": 0.9820001125335693,
+ "bench/vector/filtered-recall||scattered, 10 of 100003|p50": 767389026.0,
+ "bench/vector/filtered-recall||scattered, 10 of 100003|recall@10": 0.8440002202987671,
+ "bench/vector/filtered-recall||scattered, 10 of 1009|p50": 786860532.0,
+ "bench/vector/filtered-recall||scattered, 10 of 1009|recall@10": 0.9770001769065857,
+ "bench/vector/filtered-recall||scattered, 5 of 11|p50": 2051940379.0,
+ "bench/vector/filtered-recall||scattered, 5 of 11|recall@10": 0.9830001592636108,
+ "bench/vector/filtered-recall||unfiltered|p50": 479961820.0,
+ "bench/vector/filtered-recall||unfiltered|recall@10": 0.9780001044273376
+}

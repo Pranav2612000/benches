@@ -1,0 +1,36 @@
+   Compiling infino v0.11.20 (/home/pranav/Desktop/Pranav/projects/infino-ai/workspace/infino)
+   Compiling infino-bench-utils v0.1.0 (/home/pranav/Desktop/Pranav/projects/infino-ai/workspace/infino/benches/utils)
+    Finished `bench` profile [optimized + debuginfo] target(s) in 7m 39s
+     Running benches/bench/main.rs (target/release/deps/bench-121dfc008fc930ce)
+[bench] === filtered-recall ===
+[corpus] requested 10000000 docs; dataset holds 10000000, reserving 8192 rows for held-out queries plus delta headroom — clamping to 9404054
+[corpus] requested 10000000 docs; dataset holds 10000000, reserving 8192 rows for held-out queries plus delta headroom — clamping to 9404054
+[filtered-recall] reusing the exact oracle at /home/pranav/infino-bench/cohere-10m/table/filtered_recall_oracle.json
+[filtered-recall] reusing the table at /home/pranav/infino-bench/cohere-10m/table (16 superfiles)
+[filtered-recall] reading the table's row ids...
+[filtered-recall] unfiltered: recall@10=0.978 returned=10.0 p50=441.33ms
+[filtered-recall] scattered, 1 of 100003 (95 rows = 0.0010%): recall@10=1.000 returned=10.0 p50=886.55ms
+[filtered-recall] scattered, 10 of 100003 (950 rows = 0.0101%): recall@10=0.940 returned=10.0 p50=987.06ms
+[filtered-recall] scattered, 1 of 1009 (9.3K rows = 0.0991%): recall@10=0.992 returned=10.0 p50=988.40ms
+[filtered-recall] scattered, 10 of 1009 (93.2K rows = 0.9912%): recall@10=0.993 returned=10.0 p50=1006.48ms
+[filtered-recall] scattered, 1 of 11 (854.9K rows = 9.0909%): recall@10=0.985 returned=10.0 p50=1084.45ms
+[filtered-recall] scattered, 5 of 11 (4.3M rows = 45.4545%): recall@10=0.983 returned=10.0 p50=2132.91ms
+[filtered-recall] clustered, 1 × 1024 rows (1.0K rows = 0.0109%): recall@10=0.972 returned=10.0 p50=582.95ms
+[filtered-recall] clustered, 10 × 1024 rows (10.2K rows = 0.1089%): recall@10=0.991 returned=10.0 p50=578.75ms
+[filtered-recall] clustered, 100 × 1024 rows (102.4K rows = 1.0889%): recall@10=0.993 returned=10.0 p50=598.95ms
+
+══ Filtered vector recall by selectivity (9.4M docs × dim=768, cohere-10m) ══
+[2mHost: AMD EPYC 9V74 80-Core Processor · 4C/8T · 63 GiB RAM · linux/x86_64[0m
+| Filter                     | selectivity | recall@10 | vs unfiltered | returned | p50       |
+| -------------------------- | ----------- | --------- | ------------- | -------- | --------- |
+|                 unfiltered |   100.0000% |     0.978 |             — |     10.0 | 441.33 ms |
+|     scattered, 1 of 100003 |     0.0010% |     1.000 |        +0.022 |     10.0 | 886.55 ms |
+|    scattered, 10 of 100003 |     0.0101% |     0.940 |        -0.038 |     10.0 | 987.06 ms |
+|       scattered, 1 of 1009 |     0.0991% |     0.992 |        +0.014 |     10.0 | 988.40 ms |
+|      scattered, 10 of 1009 |     0.9912% |     0.993 |        +0.015 |     10.0 |    1.01 s |
+|         scattered, 1 of 11 |     9.0909% |     0.985 |        +0.007 |     10.0 |    1.08 s |
+|         scattered, 5 of 11 |    45.4545% |     0.983 |        +0.005 |     10.0 |    2.13 s |
+|   clustered, 1 × 1024 rows |     0.0109% |     0.972 |        -0.006 |     10.0 | 582.95 ms |
+|  clustered, 10 × 1024 rows |     0.1089% |     0.991 |        +0.013 |     10.0 | 578.75 ms |
+| clustered, 100 × 1024 rows |     1.0889% |     0.993 |        +0.015 |     10.0 | 598.95 ms |
+[markdown] updated benches/README.md (bench/vector/filtered-recall)

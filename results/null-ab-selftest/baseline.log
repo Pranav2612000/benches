@@ -1,0 +1,14 @@
+   Compiling infino v0.11.20 (/home/pranav/Desktop/Pranav/projects/infino-ai/workspace/infino)
+   Compiling infino-bench-utils v0.1.0 (/home/pranav/Desktop/Pranav/projects/infino-ai/workspace/infino/benches/utils)
+    Finished `bench` profile [optimized + debuginfo] target(s) in 7m 34s
+     Running benches/bench/main.rs (target/release/deps/bench-121dfc008fc930ce)
+[bench] === tombstone ===
+[tombstone-overhead] 50000 docs / 8 superfiles; measuring FTS + SQL p50 across clean / one_percent / ten_percent_churned...
+
+══ Tombstone overhead — reader-side filter warm path (50000 docs, 8 superfiles) ══
+[2mHost: AMD EPYC 9V74 80-Core Processor · 4C/8T · 63 GiB RAM · linux/x86_64[0m
+| State               | FTS p50   | SQL COUNT(*) p50 | Peak RSS   | Median RSS | P90 RSS    |
+| ------------------- | --------- | ---------------- | ---------- | ---------- | ---------- |
+|               clean | 121.31 µs |        161.77 µs |  76.60 MiB |  46.57 MiB |  76.60 MiB |
+|         one_percent | 114.49 µs |        230.36 µs |  96.63 MiB |  93.84 MiB |  96.63 MiB |
+| ten_percent_churned | 114.13 µs |        254.01 µs | 101.83 MiB | 100.01 MiB | 101.83 MiB |

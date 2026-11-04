@@ -1,0 +1,18 @@
+label:      2026-11-03-filtered-recall-b57eb157-vs-0f1485fb
+baseline:   HEAD~1 (b57eb157)  vector: an update retires its old rows in the hidden index too (#1181)
+candidate:  HEAD   (0f1485fb)  feat vector: filtered vector_search when filter keeps many matches
+harness:    0f1485fb plus the filtered-recall diagnostic
+selector:   filtered-recall corpus=parquet:<cohere-10m>
+table:      ~/infino-bench/cohere-10m/table (9.4M rows x 768 dims, 16 superfiles, 41 GiB)
+corpus:     cohere-10m, clamped to 9,404,054 rows (8192 held out as queries + delta headroom)
+host:       Linux x86_64, AMD EPYC 9V74, 4C/8T, 63 GiB RAM
+started:    2026-11-03
+
+Run by hand, before ab.sh existed; this directory is the shape ab.sh now
+produces. Both phases reopened one prebuilt table and one cached oracle.
+The engine difference between phases is a single file,
+src/supertable/query/vector.rs — the commit's other two files are
+test-only code.
+
+baseline exit 101: the sweep's gate failed on three rungs, which is the
+expected outcome for the commit before the fix.

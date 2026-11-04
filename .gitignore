@@ -1,0 +1,4 @@
+# Datasets, built tables and scratch live under $LAB_DATA_DIR
+# (default ~/infino-bench), never in the repo.
+*.pyc
+__pycache__/

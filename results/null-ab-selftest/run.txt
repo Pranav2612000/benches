@@ -1,0 +1,31 @@
+label:      null-ab-selftest
+baseline:   HEAD (0f1485fb)
+candidate:  HEAD (0f1485fb)
+harness:    HEAD (0f1485fb)
+selector:   tombstone
+table:      <per-phase temporary>
+host:       Linux x86_64, 8 cpus
+started:    2026-11-04T04:25:58+00:00
+# HEAD (0f1485fb) → HEAD (0f1485fb)
+
+- baseline metrics: tombstone-overhead.json
+- candidate metrics: tombstone-overhead.json
+
+| section | row | metric | baseline | candidate | change |
+| --- | --- | --- | --- | --- | --- |
+| overhead | clean | FTS p50 | 121,313 | 114,122 | -7,191 |
+| overhead | clean | Median RSS | 48,828,416 | 45,813,760 | -3,014,656 |
+| overhead | clean | P90 RSS | 80,318,464 | 76,804,096 | -3,514,368 |
+| overhead | clean | Peak RSS | 80,318,464 | 76,804,096 | -3,514,368 |
+| overhead | clean | SQL COUNT(*) p50 | 161,773 | 165,129 | +3,356 |
+| overhead | one_percent | FTS p50 | 114,492 | 115,183 | +691 |
+| overhead | one_percent | Median RSS | 98,394,112 | 88,629,248 | -9,764,864 |
+| overhead | one_percent | P90 RSS | 101,326,848 | 92,246,016 | -9,080,832 |
+| overhead | one_percent | Peak RSS | 101,326,848 | 92,246,016 | -9,080,832 |
+| overhead | one_percent | SQL COUNT(*) p50 | 230,357 | 234,374 | +4,017 |
+| overhead | ten_percent_churned | FTS p50 | 114,132 | 110,206 | -3,926 |
+| overhead | ten_percent_churned | Median RSS | 104,869,888 | 97,914,880 | -6,955,008 |
+| overhead | ten_percent_churned | P90 RSS | 106,778,624 | 100,098,048 | -6,680,576 |
+| overhead | ten_percent_churned | Peak RSS | 106,778,624 | 100,098,048 | -6,680,576 |
+| overhead | ten_percent_churned | SQL COUNT(*) p50 | 254,013 | 262,605 | +8,592 |
+

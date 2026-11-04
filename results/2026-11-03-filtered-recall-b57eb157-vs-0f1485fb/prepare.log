@@ -1,0 +1,40 @@
+    Finished `bench` profile [optimized + debuginfo] target(s) in 0.26s
+     Running benches/bench/main.rs (target/release/deps/bench-121dfc008fc930ce)
+[bench] === filtered-recall ===
+[corpus] requested 10000000 docs; dataset holds 10000000, reserving 8192 rows for held-out queries plus delta headroom — clamping to 9404054
+[corpus] requested 10000000 docs; dataset holds 10000000, reserving 8192 rows for held-out queries plus delta headroom — clamping to 9404054
+[corpus] requested 10000000 docs; dataset holds 10000000, reserving 8192 rows for held-out queries plus delta headroom — clamping to 9404054
+[corpus] requested 10000000 docs; dataset holds 10000000, reserving 8192 rows for held-out queries plus delta headroom — clamping to 9404054
+[corpus] requested 10000000 docs; dataset holds 10000000, reserving 8192 rows for held-out queries plus delta headroom — clamping to 9404054
+[supertable_ingest] loading 9.4M ×768 cohere-10m vectors...
+[filtered-recall] building 9.4M docs at /home/pranav/infino-bench/cohere-10m/table...
+[corpus] requested 10000000 docs; dataset holds 10000000, reserving 8192 rows for held-out queries plus delta headroom — clamping to 9404054
+[filtered-recall] built + optimized in 1056.7s (16 superfiles)
+[filtered-recall] computing exact top-10 for 100 queries over 9.4M rows, unfiltered plus 9 filters...
+[vector ground truth] 475136/9404054 docs (5%)
+[vector ground truth] 942080/9404054 docs (10%)
+[vector ground truth] 1417216/9404054 docs (15%)
+[vector ground truth] 1884160/9404054 docs (20%)
+[vector ground truth] 2351104/9404054 docs (25%)
+[vector ground truth] 2826240/9404054 docs (30%)
+[vector ground truth] 3293184/9404054 docs (35%)
+[vector ground truth] 3768320/9404054 docs (40%)
+[vector ground truth] 4235264/9404054 docs (45%)
+[vector ground truth] 4702208/9404054 docs (50%)
+[vector ground truth] 5177344/9404054 docs (55%)
+[vector ground truth] 5644288/9404054 docs (60%)
+[vector ground truth] 6119424/9404054 docs (65%)
+[vector ground truth] 6586368/9404054 docs (70%)
+[vector ground truth] 7053312/9404054 docs (75%)
+[vector ground truth] 7528448/9404054 docs (80%)
+[vector ground truth] 7995392/9404054 docs (85%)
+[vector ground truth] 8470528/9404054 docs (90%)
+[vector ground truth] 8937110/9404054 docs (95%)
+[filtered-recall] oracle done in 59.4s
+[filtered-recall] cached the oracle at /home/pranav/infino-bench/cohere-10m/table/filtered_recall_oracle.json
+[filtered-recall] reading the table's row ids...
+[filtered-recall] unfiltered: recall@10=0.987 returned=10.0 p50=14.36ms
+error: bench failed, to rerun pass `--bench bench`
+
+Caused by:
+  process didn't exit successfully: `/home/pranav/Desktop/Pranav/projects/infino-ai/workspace/infino/target/release/deps/bench-121dfc008fc930ce filtered-recall 'corpus=parquet:/home/pranav/infino-bench/corpora/cohere-10m' --bench` (signal: 15, SIGTERM: termination signal)

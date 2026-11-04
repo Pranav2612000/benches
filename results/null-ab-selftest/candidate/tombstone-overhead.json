@@ -1,0 +1,18 @@
+{
+  "bench/tombstone/overhead||ten_percent_churned|Median RSS": 97914880.0,
+  "bench/tombstone/overhead||clean|P90 RSS": 76804096.0,
+  "bench/tombstone/overhead||clean|Peak RSS": 76804096.0,
+  "bench/tombstone/overhead||ten_percent_churned|Peak RSS": 100098048.0,
+  "bench/tombstone/overhead||ten_percent_churned|SQL COUNT(*) p50": 262605.0,
+  "bench/tombstone/overhead||one_percent|Median RSS": 88629248.0,
+  "__corpus": 811588788429688.0,
+  "bench/tombstone/overhead||one_percent|SQL COUNT(*) p50": 234374.0,
+  "bench/tombstone/overhead||one_percent|P90 RSS": 92246016.0,
+  "bench/tombstone/overhead||clean|SQL COUNT(*) p50": 165129.0,
+  "bench/tombstone/overhead||ten_percent_churned|FTS p50": 110206.0,
+  "bench/tombstone/overhead||ten_percent_churned|P90 RSS": 100098048.0,
+  "bench/tombstone/overhead||one_percent|Peak RSS": 92246016.0,
+  "bench/tombstone/overhead||clean|FTS p50": 114122.0,
+  "bench/tombstone/overhead||clean|Median RSS": 45813760.0,
+  "bench/tombstone/overhead||one_percent|FTS p50": 115183.0
+}
