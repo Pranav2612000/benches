@@ -1,0 +1,8 @@
+[hseb 14:44:11] 10,000 queries
+[hseb 14:51:21] k=10  sel=100%  recall=0.9911  p50=37.79ms  p99=51.46ms  under-filled=0
+[hseb 15:20:58] k=10  sel= 90%  recall=0.9757  p50=177.29ms  p99=193.13ms  under-filled=0
+[hseb 15:30:30] k=10  sel= 10%  recall=0.9639  p50=57.14ms  p99=61.59ms  under-filled=0
+[hseb 15:38:30] k=100 sel=100%  recall=0.9248  p50=41.91ms  p99=70.31ms  under-filled=0
+[hseb 16:11:33] k=100 sel= 90%  recall=0.9801  p50=197.05ms  p99=223.97ms  under-filled=0
+[hseb 16:23:00] k=100 sel= 10%  recall=0.9710  p50=68.63ms  p99=73.65ms  under-filled=0
+[hseb 16:23:00] wrote results/2026-11-04-hseb-msmarco-0.11.19/all-MiniLM-L6-v2-1M.json
