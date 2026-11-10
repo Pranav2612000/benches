@@ -16,6 +16,7 @@ commits through the same harness, and diffs the result.
 scripts/stage-dataset.sh   download a real embedding dataset as parquet shards
 scripts/ab.sh              run one bench selector against two commits
 scripts/compare.py         diff two phases into a markdown table
+scripts/hseb.py            HSEB MS MARCO filtered-vector benchmark (build / query)
 docs/ab-method.md          why the driver is shaped the way it is — read this
 docs/filtered-recall.md    worked example: the filtered-vector-recall sweep
 results/                   recorded runs, logs and metrics included
